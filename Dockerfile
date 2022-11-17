@@ -1,5 +1,5 @@
 FROM adoptopenjdk/maven-openjdk8
-MAINTAINER daniel@dcx.ufpb.br
+MAINTAINER pedrodevmob@gmail.com
 
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} application.jar
