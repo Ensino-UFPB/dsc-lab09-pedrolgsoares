@@ -33,7 +33,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           script: |
             # Login in registry
-            docker login  registry.digitalocean.com/demo-dsc -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} -u ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+            docker login  registry.digitalocean.com/deployoceanpedroegabriel -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} -u ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
             
             # Update image
             docker pull registry.digitalocean.com/deployoceanpedroegabriel/figurinha-copa:latest
